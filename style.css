@@ -1,0 +1,103 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+header {
+  background: #4f46e5;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Search bar */
+.search-container {
+  text-align: center;
+  margin: 1rem auto;
+}
+#searchInput {
+  padding: 0.6rem 1rem;
+  width: 80%;
+  max-width: 500px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Category buttons */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #fff;
+}
+.category-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #e0e0e0;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+.category-btn:hover,
+.category-btn.active {
+  background: #4f46e5;
+  color: white;
+}
+
+/* Gallery */
+main {
+  padding: 2rem;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+.image-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+ 
+}
+.image-card img {
+  max-width: 100%;
+  height: auto;
+}
+.image-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #4f46e5;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  font-size: 0.9rem;
+  color: #666;
+}
+.image-card img{
+  border-radius: 10px;
+}
